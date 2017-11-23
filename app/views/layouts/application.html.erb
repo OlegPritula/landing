@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rails Landing Page</title>
+  <meta name="description" content="Demo - Fullscreen Landing Page" />
+  <meta name="keywords" content="open, source, fullscreen, image, coming, soon, pre, launch, landing, page, construction, lead, generation, rails, collect, email, sign-up, collection, beta, code, free, demo, tutorial, github" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body id="background-image">
+
+<%= yield %>
+<footer><a href="https://github.com/mhill426/rails-landing-page" target="_blank">Open Source</a> by <a href="#" target="_blank">Oleg Pritula</a></footer>
+</body>
+</html>

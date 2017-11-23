@@ -1,0 +1,19 @@
+<%= form_for(@landing) do |f| %>
+  <% if @landing.errors.any? %>
+    <div id="error_explanation">
+      <% @landing.errors.full_messages.each do |message| %>
+        <error><%= message %></error>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="input-group">
+    <%= f.text_field :name, label: false, placeholder: "Name"%>
+  </div>
+  <div class="input-group">
+    <%= f.text_field :email, label: false, placeholder: "Email"%>
+  </div>
+  <div>
+    <%= f.submit "SUBMIT", class: "btn-custom" %>
+  </div>
+<% end %>
